@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var kbc={
+            'questions_list':
+        [{
+            'text':"Which subject are we studying?",
+            'options':["HTML","CSS","Javascript","React"],
+            'correct_answer':"Javascript",
+            'price_money':1000
+        },
+        {
+            'text':"Which of the following is not a datatype in Javascript?",
+            'options':["Number","Array","Integer","Object"],
+            'correct_answer':"Integer",
+            'price_money':10000
+        },
+        {
+            'text':"Which of the following tag is used to link two webpages?",
+            'options':["Anchor","Image","Div","Paragraph"],
+            'correct_answer':"Anchor",
+            'price_money':20000 
+        },
+        {
+            'text':"Which of the following is not a type to declare a variable in Javascript?",
+            'options':["var","let","const","int"],
+            'correct_answer':"int",
+            'price_money':40000
+        }
+
+],
+       'print_question':function(){
+           for(var i=0;i<4;i++){
+            
+                  let question_printed=kbc.questions_list[i].text;
+                  console.log(question_printed);
+
+           }
+       },
+
+       'current_question':function(){
+               let i=0;
+            
+               console.log(kbc.current_question.i);
+               i++;
+           }
+           
+       
+       
+
+
+          
+         
+
+
+        };
+
+
+    </script>
+    
+</body>
+</html>
